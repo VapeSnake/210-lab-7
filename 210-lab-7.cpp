@@ -3,6 +3,9 @@
 
 using namespace std;
 
+string* reverseArray(string*);
+void displayArray(string*);
+
 main()
 {
     cout << "Hello world!" << endl;
