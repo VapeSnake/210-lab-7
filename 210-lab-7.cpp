@@ -15,9 +15,10 @@ main()
     arrayPtr = new string[SIZE]{"Bill", "Javier", "Arthur", "John", "Dutch"};
 
     cout << "Original array: ";
-    displayArray(arrayPtr, SIZE) << endl;
+    displayArray(arrayPtr, SIZE);
     arrayPtr = reverseArray(arrayPtr, SIZE);
-
+    cout << "\nReversed array: ";
+    displayArray(arrayPtr, SIZE);
     delete[] arrayPtr; // Always release memory when done.
     return 0;
 }
