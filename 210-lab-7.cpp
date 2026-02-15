@@ -21,7 +21,7 @@ main()
 string* reverseArray(string *ptr, int size)
 {
     for (int i = 0; i < size; i++) //Loop should only happen 2(?) times. Any more will mess with reverse function.
-    { // CODING BREAK
+    { 
         string temp = *(ptr + i); // Create temp to begin reverse loop
         *(ptr + i) = *(ptr + (size - 1 - i)); // Each element will swap from outside-to-inside
         *(ptr + (size - 1 - i)) = temp;
